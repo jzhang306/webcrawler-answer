@@ -52,7 +52,7 @@ while True:
         job_title = job.get('title', '')
         job_location = job.get('locationsText', '')
         job_posting_date = job.get('postedOn', '')
-        job_id = job.get('bulletFields', '')
+        job_id = job.get('bulletFields', '')[0]
         job_link = job.get('externalPath', '')
         all_jobs.append([job_title, job_location, job_posting_date, job_id, job_link])
         job_counter += 1
