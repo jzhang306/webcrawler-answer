@@ -38,6 +38,7 @@ while True:
         break
 
     data = response.json()
+    #Eafter offset 0, the total number is always 0 on the website, so just collect it at the beginning.
     if offset == 0:
         job_number = data.get("total", 0)
     
